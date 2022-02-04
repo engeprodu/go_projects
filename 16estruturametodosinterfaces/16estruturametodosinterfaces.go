@@ -24,3 +24,8 @@ func Area(retangulo Retangulo) float64 {
 type Circulo struct {
     Raio float64
 }
+
+// Area retorna a área de um círculo
+func (c Circulo) Area() float64 {
+	return math.Pi * c.Raio * c.Raio
+}
