@@ -20,3 +20,7 @@ func Perimetro(retangulo Retangulo) float64 {
 func Area(retangulo Retangulo) float64 {
     return retangulo.Largura * retangulo.Altura
 }
+
+type Circulo struct {
+    Raio float64
+}
