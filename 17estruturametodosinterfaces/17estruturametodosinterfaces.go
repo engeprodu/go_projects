@@ -39,5 +39,5 @@ type Triangulo struct {
 }
 
 func (t Triangulo) Area() float64 {
-    return 0
+    return (t.Base * t.Altura) * 0.5
 }
