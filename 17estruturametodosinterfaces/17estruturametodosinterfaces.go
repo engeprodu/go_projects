@@ -32,3 +32,8 @@ type Circulo struct {
 func (c Circulo) Area() float64 {
 	return math.Pi * c.Raio * c.Raio
 }
+
+type Triangulo struct {
+    Base   float64
+    Altura float64
+}

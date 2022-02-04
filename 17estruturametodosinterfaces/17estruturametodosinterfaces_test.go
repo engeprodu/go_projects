@@ -31,7 +31,3 @@ func TestArea(t *testing.T) {
     }
 }
 
-//comentario de teste//comentario de teste
-
-//comentario de teste//comentario de teste
-
