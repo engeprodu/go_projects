@@ -1,26 +1,34 @@
 package main
 
-// // Perimetro retorna o perímetro de um retângulo
-// func Perimetro(largura float64, altura float64) float64 {
-// 	return 2* (largura + altura)
-// }
+import "math"
 
-// func Area(largura float64, altura float64) float64 {
-// 	return largura * altura
-// }
+// Forma é implementado por qualquer coisa que possa dizer qual é sua área
+type Forma interface {
+	Area() float64
+}
+
+// Retangulo tem as dimensões de um retângulo
 type Retangulo struct {
-    Largura  float64
-    Altura float64
+	Largura float64
+	Altura  float64
 }
 
-func (r Retangulo) Area() float64  {
-    return 0
+// Area retorna a área de um retângulo
+func (r Retangulo) Area() float64 {
+	return r.Largura * r.Altura
 }
 
+// Perimetro retorna o perímetro de um retângulo
+func Perimetro(retangulo Retangulo) float64 {
+	return 2 * (retangulo.Largura + retangulo.Altura)
+}
+
+// Circulo representa um círculo.
 type Circulo struct {
-    Raio float64
+	Raio float64
 }
 
-func (c Circulo) Area() float64  {
-    return 0
+// Area retorna a área de um círculo
+func (c Circulo) Area() float64 {
+	return math.Pi * c.Raio * c.Raio
 }

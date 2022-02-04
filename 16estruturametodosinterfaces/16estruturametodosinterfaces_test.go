@@ -1,5 +1,5 @@
 // Gostaria de reforçar o quão grandioso o compilador é. É muito importante ter tempo para ler lentamente as mensagens de erro que você recebe, pois isso te ajudará a longo prazo.package main
-
+package main
 
 import "testing"
 
